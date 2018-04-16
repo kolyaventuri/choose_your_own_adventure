@@ -95,3 +95,48 @@ ul.navigation .profile div {
 ul.navigation .profile div * {
   display: inline-block;
 }
+
+/* HERO INFO */
+
+.hero .info {
+  width: 60%;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-areas: 'text albums';
+}
+
+.hero .info .text {
+  grid-area: text;
+
+  font-weight: bold;
+}
+
+.info .text * {
+  padding: 0.125em 0;
+}
+
+.info .text h1 {
+  font-size: 2.5em;
+}
+
+.info .text p {
+    font-size: 1.2em;
+}
+
+.button.special {
+  color: #FFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #1db954;
+
+  position: relative;
+  top: 2em;
+  padding: 0.85em 3em;
+  border-radius: 2em;
+  width: 10em;
+}
