@@ -250,6 +250,7 @@ footer .links .link {
 
 .link ul li:first-child {
   text-transform: uppercase;
+  font-weight: bold;
   color: #919496;
 }
 
@@ -260,6 +261,28 @@ footer .links .link {
 .link a {
   color: #FFF;
   text-decoration: none;
+}
+
+.social {
+  grid-area: social;
+  color: #FFF;
+  font-size: 2em;
+  text-align: right;
+}
+
+.social ul li {
+  display: inline-block;
+  padding: 0.5em;
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  background: #222326;
+  border-radius: 50%;
+}
+
+.social ul li:hover {
+  color: #1db954;
+  cursor: pointer;
 }
 
 
