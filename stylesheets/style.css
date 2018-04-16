@@ -100,8 +100,8 @@ ul.navigation .profile div * {
 
 .hero .info {
   width: 60%;
-  position: absolute;
-  top: 45%;
+  position: relative;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 
@@ -114,6 +114,9 @@ ul.navigation .profile div * {
   grid-area: text;
 
   font-weight: bold;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .info .text * {
@@ -126,6 +129,21 @@ ul.navigation .profile div * {
 
 .info .text p {
     font-size: 1.2em;
+}
+
+.hero .albums {
+  display: grid;
+
+  grid-area: albums;
+  grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
+  grid-template-rows: 50% 50%;
+  grid-row-gap: 1em;
+}
+
+.hero .album {
+  background: blue;
+  width: 15em;
+  height: 15em;
 }
 
 .button.special {
