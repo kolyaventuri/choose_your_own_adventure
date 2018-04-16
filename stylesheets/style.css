@@ -119,19 +119,19 @@ ul.navigation .profile div * {
   transform: translateY(-50%);
 }
 
-.info .text * {
+.hero .info .text * {
   padding: 0.125em 0;
 }
 
-.info .text h1 {
+.hero .info .text h1 {
   font-size: 2.5em;
 }
 
-.info .text p {
+.hero .info .text p {
     font-size: 1.2em;
 }
 
-.hero .albums {
+.info .albums {
   display: grid;
 
   grid-area: albums;
@@ -140,11 +140,75 @@ ul.navigation .profile div * {
   grid-row-gap: 1em;
 }
 
-.hero .album {
+.info .album {
   background: blue;
   width: 15em;
   height: 15em;
 }
+
+.hero .info svg.fa-caret-down {
+  position: absolute;
+  bottom: -2em;
+  left: 50%;
+  transform: translateX(-50%);
+
+  font-size: 2em;
+  width: 1em;
+  height: 1em;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+/* info */
+
+.info {
+  position: relative;
+  width: 80%;
+  height: auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.info h1 {
+  font-size: 3em;
+  font-weight: bold;
+
+  padding: 1em 0;
+}
+
+.info .grid {
+  display: grid;
+  grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
+}
+
+.info article {
+  padding: 0 3em 0 0;
+}
+
+.info article * {
+  padding: 0.5em 0;
+}
+
+.info article h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.info article a {
+  color: #1db954;
+  text-decoration: none;
+}
+
+.info article a:not(.inner) {
+  text-transform: uppercase;
+  font-weight: bold;
+
+  padding: 2em 0;
+}
+
+.info article
+
+/* EXTRA */
 
 .button.special {
   color: #FFF;
