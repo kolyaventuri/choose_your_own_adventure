@@ -1,3 +1,7 @@
+body {
+  font-family: Roboto, Arial;
+}
+
 .hero {
   width: 100%;
   height: 75%;
@@ -5,4 +9,89 @@
     radial-gradient(ellipse at 0 0, #c074b2, rgba(0,0,0,0) 75%),
     radial-gradient(ellipse at 100% 0, #8ab5e8, rgba(0,0,0,0) 75%),
     #000000;
+
+  position: relative;
+  top: 0;
+  left: 0;
+
+  color: #FFF;
+}
+
+.hero nav {
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  width: 60%;
+  transform: translateX(-50%);
+  height: 50px;
+}
+
+nav h1 {
+  font-size: 1.6em;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: bold;
+}
+
+nav h1 .smaller {
+  font-size: 0.75em;
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+}
+
+nav h1 .smaller:before {
+  content: "\2009";
+}
+
+nav ul.navigation {
+  position: absolute;
+  right: 0;
+}
+
+nav ul.navigation li {
+  display: inline-block;
+  padding: 0 1em;
+
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+ul.navigation li a {
+  color: #FFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+ul.navigation .profile {
+  position: relative;
+}
+
+ul.navigation .profile * {
+  display: inline-block;
+  padding: 0;
+  margin:0;
+}
+
+ul.navigation .profile .fa-user {
+    font-size: 0.85em;
+    border: 2px solid #FFFFFF;
+    padding: 0.5em;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+ul.navigation .profile div {
+  position: absolute;
+  left: 3.5em;
+}
+
+ul.navigation .profile div * {
+  display: inline-block;
 }
