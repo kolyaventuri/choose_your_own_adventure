@@ -217,17 +217,51 @@ footer {
   color: #FFF;
 }
 
-footer section {
+footer .container {
   width: 80%;
   position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  display: grid;
+  grid-template-columns: 15% 60% 25%;
+  grid-template-areas: 'logo links social';
 }
 
 footer .logo {
   font-size: 2.5em;
+  grid-area: logo;
 }
+
+footer .links {
+  grid-area: links;
+  position: relative;
+  display: grid;
+  grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
+}
+
+footer .links .link {
+  position: relative;
+  top: 0;
+
+  font-size: 1em;
+}
+
+.link ul li:first-child {
+  text-transform: uppercase;
+  color: #919496;
+}
+
+.link ul li {
+  padding: 0.5em 0;
+}
+
+.link a {
+  color: #FFF;
+  text-decoration: none;
+}
+
 
 /* EXTRA */
 
